@@ -1,0 +1,16 @@
+{
+  "name": "api_twitter",
+  "version": "1.0.0",
+  "description": "A bot for twitter",
+  "main": "Bot.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "go": "node bot.js"
+  },
+  "author": "William4ndrade",
+  "license": "MIT"
+}

@@ -4,13 +4,6 @@ const dotenv = require("dotenv").config({
 })
 
 
-const ConfigBot = {
-    token: process.env.TOKEN,
-    csrftoken: process.env.CSRF_TOKEN,
-    Cookies: process.env.COOKIES,
-    key_word: process.env.KEY_WORD
-}
-
 
 class TwitterBot {
     constructor(BearerToken, csrfToken, AllCookies) {
@@ -131,5 +124,5 @@ class TwitterBot {
 
 }
 
-const bot = new TwitterBot(ConfigBot.token, ConfigBot.csrftoken, ConfigBot.Cookies)
+module.exports = TwitterBot
 

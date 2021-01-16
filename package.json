@@ -1,16 +1,24 @@
 {
   "name": "api_twitter",
   "version": "1.0.0",
-  "description": "A bot for twitter",
+  "description": "Esse é um simples codigo para automatização no twitter sem o uso da API oficial",
   "main": "Bot.js",
   "dependencies": {
     "dotenv": "^8.2.0",
     "axios": "^0.21.1"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/William4ndrade/Twitter_Bot/tree/main"
+  },
+  "keywords": ["twitter", "bot", "api",  "api_twitter"],
+  "bugs": {
+    "url": "https://github.com/William4ndrade/Twitter_Bot/issues"
+  },
   "scripts": {
     "go": "node bot.js"
   },
   "author": "William4ndrade",
-  "license": "MIT"
+  "license": "ISC"
 }

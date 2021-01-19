@@ -31,10 +31,16 @@ class TwitterBot {
 
         }).then(e => {
             if (e.status === 200) {
-                console.log(`A frase ${mensage} foi tuitada com sucesso`)
+                console.log({
+                    OK: true,
+                    statusmensage: "new tweet created!"
+                })
             }
         }).catch(err => {
-            console.log("Ocorreu um erro ao twittar: " + mensage + "\n\n\n\n\n ERROR: " + err)
+            console.log({
+                ok: false,
+                statusmensage: "ERROR TO POST NEW TWEET"
+            })
         })
     }
 
@@ -62,7 +68,7 @@ class TwitterBot {
 
             }
         }).catch(err => {
-            console.error("ERRO AO PESQUISAR: " + err)
+            console.error("ERROR Search: " + err)
         })
 
         return ValidateIDs.length ? ValidateIDs : false
@@ -87,11 +93,14 @@ class TwitterBot {
                         if (Tweets.length === 0) {
                             Tweets = await this.Search(word)
                         }
-                        console.log(counter)
+                        console.log("Tweets retweeted: " + counter)
                     }
                 }).catch(err => {
                     Tweets.pop()
-                    console.log(err)
+                    console.log({
+                        ok: false, 
+                        statusmensage: "error on retweet"
+                    })
                 })
 
             }, 87000)
@@ -111,7 +120,10 @@ class TwitterBot {
 
 
         } else {
-            console.error("Não há tweets para retweet")
+            console.error({
+                ok: false,
+                statusmensage: "No tweets to retweet"
+            })
         }
 
 

@@ -1,6 +1,6 @@
 {
   "name": "api_twitter",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Esse é um simples codigo para automatização no twitter sem o uso da API oficial",
   "main": "Bot.js",
   "dependencies": {

@@ -44,4 +44,4 @@ bot.retweet("eye")
 ## Finish:
 
 - Sorry about any error on english, is not my first language.
-- If your found any error please tell me.
+- If you found any error please tell me.
